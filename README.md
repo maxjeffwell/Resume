@@ -23,7 +23,11 @@
 **👉 [View My Resume](https://maxjeffwell.github.io/Resume/) 👈**
 
 <div align="center">
-  <img src="https://via.placeholder.com/800x400/667eea/ffffff?text=Resume+Preview" alt="Resume Preview" width="80%" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);"/>
+  <a href="https://maxjeffwell.github.io/Resume/">
+    <img src="https://img.shields.io/badge/🎯_Click_to_View_Live_Resume-Visit_Site-667eea?style=for-the-badge&logoColor=white&labelColor=764ba2" alt="Click to View Resume" />
+  </a>
+  <br/><br/>
+  <em>✨ Interactive resume with animated gradients and smooth transitions ✨</em>
 </div>
 
 ---
