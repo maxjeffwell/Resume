@@ -1,7 +1,7 @@
 # <div align="center">🎯 **Jeffrey R. Maxwell** | Resume Portfolio</div>
 
 <div align="center">
-  
+
 [![Live Site](https://img.shields.io/badge/🌐_Live_Site-Portfolio-667eea?style=for-the-badge&logoColor=white)](https://maxjeffwell.github.io/Resume/)
 [![Jekyll](https://img.shields.io/badge/Jekyll-CC0000?style=for-the-badge&logo=Jekyll&logoColor=white)](https://jekyllrb.com/)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white)](https://pages.github.com/)
@@ -10,7 +10,7 @@
 </div>
 
 <div align="center">
-  
+
 **Self-Taught Full-Stack Developer | Hispanic Studies Scholar**  
 *Transforming ideas into elegant code since 2019* ✨
 
@@ -253,14 +253,12 @@ timeline
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-**Made with ❤️ and ☕ by Jeffrey R. Maxwell**
-
 </div>
 
 ---
 
 <div align="center">
-  
+
 **⭐ Star this repository if you found it helpful! ⭐**
 
 *"Code is poetry written in logic"* ✨
