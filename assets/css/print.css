@@ -1,0 +1,53 @@
+/* Print-specific styles for resume */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1 {
+        font-size: 24pt;
+        page-break-after: avoid;
+    }
+    
+    h2, h3 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+    
+    p, li {
+        orphans: 3;
+        widows: 3;
+    }
+    
+    /* Hide navigation and interactive elements */
+    header nav,
+    .no-print,
+    #sidebar {
+        display: none !important;
+    }
+    
+    /* Ensure links are visible */
+    a {
+        text-decoration: underline;
+    }
+    
+    /* Page breaks */
+    .page-break {
+        page-break-before: always;
+    }
+    
+    @page {
+        margin: 0.5in;
+    }
+}

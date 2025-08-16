@@ -1,0 +1,79 @@
+/* Main stylesheet for resume site */
+
+/* Font Loading */
+@font-face {
+    font-family: 'Architects Daughter';
+    src: url('../../fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf') format('truetype');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Base Typography */
+body {
+    font-family: 'Architects Daughter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 20px 0;
+    color: #1a202c;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2b6cb0;
+    margin: 30px 0 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 20px 0 10px 0;
+}
+
+/* Links */
+a {
+    color: #2b6cb0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Layout */
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Content sections */
+#main-content {
+    margin-bottom: 40px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 48px;
+    }
+}
