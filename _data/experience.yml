@@ -1,0 +1,10 @@
+# Experience - Projects (since this is a portfolio-based resume)
+- company: Personal Projects Portfolio
+  position: Full-Stack Developer
+  duration: 2019 &mdash; Present
+  summary: Built and deployed 6+ production-ready applications demonstrating mastery of modern web technologies including React, Node.js, GraphQL, and cloud platforms. <ul class="resume-item-list"><li>EducationELLy - Comprehensive student management system with JWT authentication</li><li>Code Talk - Real-time collaborative platform using GraphQL and WebSockets</li><li>Bookmarked - Modern React application with serverless backend</li><li>FireBook - Full-stack application using Firebase ecosystem</li><li>Developer Portfolio - Performance-optimized static site with perfect Lighthouse scores</li></ul>
+
+- company: Thinkful Bootcamp
+  position: Engineering Immersion Student
+  duration: 2019
+  summary: Intensive 6-month program with 1000+ hours of coding practice. Focused on modern JavaScript frameworks (React, Node.js, Express) with emphasis on pair-programming and agile methodology. Completed advanced computer science topics including data structures and algorithms with 1-on-1 industry mentorship.

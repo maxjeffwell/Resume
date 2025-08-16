@@ -1,12 +1,55 @@
-title: Jeffrey R. Maxwell - Resume
-description: Full-Stack Developer Resume
+# Site settings
+title: "Jeffrey R. Maxwell - Resume"
+description: "Full-Stack Developer Resume"
 url: "https://maxjeffwell.github.io"
-baseurl: "/Resume"
+baseurl: "/resume"
 
+# Build settings
 markdown: kramdown
-highlighter: rouge
-theme: jekyll-theme-cayman
+sass:
+  sass_dir: _sass
+  style: compressed
 
+# Resume settings
+resume_avatar: "false"
+resume_name: "Jeffrey R. Maxwell"
+resume_title: "Full-Stack Developer"
+
+# Contact info
+resume_contact_email: "jeff@el-jefe.me"
+resume_contact_telephone: "508.395.2008"
+resume_contact_address: "Massachusetts, USA"
+
+resume_header_contact_info: "jeff@el-jefe.me • 508.395.2008"
+display_header_contact_info: "true"
+
+resume_header_intro: "<p>Self-motivated full-stack developer with demonstrated ability to independently master modern web technologies through intensive self-directed learning and immersive bootcamp training. Successfully built and deployed 6+ production-ready applications using React, Node.js, GraphQL, and cloud platforms.</p>"
+
+# Job search status
+resume_looking_for_work: "yes"
+
+# Decide which sections to use
+resume_section_experience: true
+resume_section_education: true
+resume_section_projects: true
+resume_section_skills: true
+resume_section_recognition: true
+resume_section_links: true
+# resume_section_associations: true
+# resume_section_interests: true
+
+# Resume social links
+resume_social_links:
+  resume_github_url: "https://github.com/maxjeffwell"
+  resume_linkedin_url: "https://www.linkedin.com/in/maxjeffwell"
+  resume_website_url: "https://el-jefe.me"
+
+resume_print_social_links: true
+
+# Design settings
+resume_theme: default
+
+# Jekyll plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -15,9 +58,6 @@ plugins:
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-
-sass:
-  style: compressed
 
 exclude:
   - Gemfile
