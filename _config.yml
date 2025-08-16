@@ -1,1 +1,32 @@
+title: Jeffrey R. Maxwell - Resume
+description: Full-Stack Developer Resume
+url: "https://maxjeffwell.github.io"
+baseurl: "/Resume"
 
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - node_modules/
+  - "*.pdf"
+  - "*.sh"
