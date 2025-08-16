@@ -5,7 +5,7 @@ baseurl: "/Resume"
 
 markdown: kramdown
 highlighter: rouge
-remote_theme: pages-themes/cayman
+theme: jekyll-theme-cayman
 
 plugins:
   - jekyll-feed
