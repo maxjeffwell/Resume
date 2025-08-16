@@ -1,6 +1,7 @@
 ---
-layout: resume
+layout: default
 title: Jeffrey R. Maxwell - Full-Stack Developer
+description: Self-Taught Full-Stack Developer | Hispanic Studies Scholar
 ---
 
 # **JEFFREY R. MAXWELL**
