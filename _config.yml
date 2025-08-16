@@ -2,7 +2,7 @@
 title: "Jeffrey R. Maxwell - Resume"
 description: "Full-Stack Developer Resume"
 url: "https://maxjeffwell.github.io"
-baseurl: "/resume"
+baseurl: "/Resume"
 
 # Build settings
 markdown: kramdown
