@@ -8,7 +8,7 @@ description: Self-Taught Full-Stack Developer | Hispanic Studies Scholar
 
 <div class="contact-info">
 <strong>Self-Taught Full-Stack Developer | Hispanic Studies Scholar</strong><br/>
-📧 maxjeffwell@gmail.com | 📱 508.395.2008<br/>
+📧 jeff@el-jefe.me | 📱 508.395.2008<br/>
 🔗 <a href="https://el-jefe.me">el-jefe.me</a> | 🐙 <a href="https://github.com/maxjeffwell">github.com/maxjeffwell</a>
 </div>
 
