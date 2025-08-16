@@ -46,13 +46,15 @@ resume_social_links:
 resume_print_social_links: true
 
 # Design settings
-resume_theme: default
+#resume_theme: default
+remote_theme: pages-themes/architect@v0.2.0
 
 # Jekyll plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 kramdown:
   input: GFM
