@@ -2,19 +2,7 @@
 layout: default
 ---
 
-# Jeffrey R. Maxwell
-
-## Full-Stack Developer
-
-**Contact:** jeff@el-jefe.me • 508.395.2008 • Florida, USA
-
-**Portfolio:** [el-jefe.me](https://el-jefe.me) • **GitHub:** [maxjeffwell](https://github.com/maxjeffwell)
-
----
-
-### Summary
-
-Self-motivated full-stack developer with demonstrated ability to independently master modern web technologies through intensive self-directed learning and immersive bootcamp training. Successfully built and deployed 6+ production-ready applications using React, Node.js, GraphQL, and cloud platforms.
+### Contact: jeff@el-jefe.me • 508.395.2008 • Florida, USA
 
 ---
 
