@@ -1,0 +1,204 @@
+/* Professional Resume CSS for Markdown to PDF Conversion */
+
+/* Base Typography */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #2d3748;
+    max-width: 8.5in;
+    margin: 0 auto;
+    padding: 0.5in;
+    background: white;
+}
+
+/* Headings */
+h1 {
+    font-size: 28pt;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 5px 0;
+    color: #1a202c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 13pt;
+    font-weight: 700;
+    color: #2b6cb0;
+    margin: 20px 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e2e8f0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    font-size: 12pt;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 15px 0 8px 0;
+}
+
+/* Links */
+a {
+    color: #2b6cb0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Info Header */
+div[style*="text-align: center"] {
+    margin-bottom: 15px !important;
+}
+
+/* Professional Summary */
+h2 + div {
+    background: #f7fafc;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+/* Skills Section - Code Blocks */
+code {
+    background: #e2e8f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10pt;
+    font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+    color: #2d3748;
+    white-space: nowrap;
+}
+
+/* Project Sections */
+h3 + div {
+    margin-left: 0 !important;
+    border-left: 3px solid #cbd5e0;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* Bullet Points */
+ul {
+    margin: 8px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin: 4px 0;
+    line-height: 1.4;
+}
+
+/* Strong emphasis */
+strong {
+    font-weight: 600;
+    color: #1a202c;
+}
+
+/* Horizontal Rules */
+hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 20px 0;
+}
+
+/* Metrics Grid */
+div[style*="display: flex"] {
+    display: flex !important;
+    justify-content: space-around !important;
+    margin: 20px 0 !important;
+    padding: 15px !important;
+    background: #f7fafc !important;
+    border-radius: 8px !important;
+}
+
+div[style*="display: flex"] > div {
+    text-align: center;
+    flex: 1;
+}
+
+div[style*="display: flex"] > div > strong {
+    display: block;
+    font-size: 18pt;
+    color: #2b6cb0;
+    margin-bottom: 3px;
+}
+
+/* What I Bring Section */
+div[style*="background-color: #f8f9fa"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+    padding: 15px !important;
+    border-radius: 8px !important;
+    margin: 20px 0 !important;
+}
+
+div[style*="background-color: #f8f9fa"] * {
+    color: white !important;
+}
+
+/* Page Breaks for PDF */
+h2 {
+    page-break-after: avoid;
+}
+
+h3 {
+    page-break-after: avoid;
+}
+
+div[style*="margin-left: 20px"] {
+    page-break-inside: avoid;
+}
+
+/* Print Specific */
+@media print {
+    body {
+        font-size: 10pt;
+        padding: 0;
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: 24pt;
+    }
+    
+    h2 {
+        font-size: 12pt;
+        margin-top: 15px;
+    }
+    
+    h3 {
+        font-size: 11pt;
+    }
+    
+    /* Hide page numbers */
+    @page {
+        margin: 0.5in;
+    }
+    
+    /* Ensure no page break after summary */
+    h2:first-of-type {
+        page-break-after: avoid;
+    }
+}
+
+/* Emoji Support */
+.emoji {
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Android Emoji", sans-serif;
+}
+
+/* Final CTA */
+div[style*="text-align: center"][style*="margin-top: 30px"] {
+    background: #edf2f7;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 25px !important;
+    font-style: italic;
+    color: #4a5568 !important;
+}

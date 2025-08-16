@@ -1,0 +1,450 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+
+/* Professional Resume CSS for Markdown to PDF Conversion */
+
+/* Base Typography */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #2d3748;
+    max-width: 8.5in;
+    margin: 0 auto;
+    padding: 0.5in;
+    background: white;
+}
+
+/* Headings */
+h1 {
+    font-size: 28pt;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 5px 0;
+    color: #1a202c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 13pt;
+    font-weight: 700;
+    color: #2b6cb0;
+    margin: 20px 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e2e8f0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    font-size: 12pt;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 15px 0 8px 0;
+}
+
+/* Links */
+a {
+    color: #2b6cb0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Info Header */
+div[style*="text-align: center"] {
+    margin-bottom: 15px !important;
+}
+
+/* Professional Summary */
+h2 + div {
+    background: #f7fafc;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+/* Skills Section - Code Blocks */
+code {
+    background: #e2e8f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10pt;
+    font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+    color: #2d3748;
+    white-space: nowrap;
+}
+
+/* Project Sections */
+h3 + div {
+    margin-left: 0 !important;
+    border-left: 3px solid #cbd5e0;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* Bullet Points */
+ul {
+    margin: 8px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin: 4px 0;
+    line-height: 1.4;
+}
+
+/* Strong emphasis */
+strong {
+    font-weight: 600;
+    color: #1a202c;
+}
+
+/* Horizontal Rules */
+hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 20px 0;
+}
+
+/* Metrics Grid */
+div[style*="display: flex"] {
+    display: flex !important;
+    justify-content: space-around !important;
+    margin: 20px 0 !important;
+    padding: 15px !important;
+    background: #f7fafc !important;
+    border-radius: 8px !important;
+}
+
+div[style*="display: flex"] > div {
+    text-align: center;
+    flex: 1;
+}
+
+div[style*="display: flex"] > div > strong {
+    display: block;
+    font-size: 18pt;
+    color: #2b6cb0;
+    margin-bottom: 3px;
+}
+
+/* What I Bring Section */
+div[style*="background-color: #f8f9fa"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+    padding: 15px !important;
+    border-radius: 8px !important;
+    margin: 20px 0 !important;
+}
+
+div[style*="background-color: #f8f9fa"] * {
+    color: white !important;
+}
+
+/* Page Breaks for PDF */
+h2 {
+    page-break-after: avoid;
+}
+
+h3 {
+    page-break-after: avoid;
+}
+
+div[style*="margin-left: 20px"] {
+    page-break-inside: avoid;
+}
+
+/* Print Specific */
+@media print {
+    body {
+        font-size: 10pt;
+        padding: 0;
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: 24pt;
+    }
+    
+    h2 {
+        font-size: 12pt;
+        margin-top: 15px;
+    }
+    
+    h3 {
+        font-size: 11pt;
+    }
+    
+    /* Hide page numbers */
+    @page {
+        margin: 0.5in;
+    }
+    
+    /* Ensure no page break after summary */
+    h2:first-of-type {
+        page-break-after: avoid;
+    }
+}
+
+/* Emoji Support */
+.emoji {
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Android Emoji", sans-serif;
+}
+
+/* Final CTA */
+div[style*="text-align: center"][style*="margin-top: 30px"] {
+    background: #edf2f7;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 25px !important;
+    font-style: italic;
+    color: #4a5568 !important;
+}
+
+
+</style><title>Jeffrey R. Maxwell - Full-Stack Developer</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='jeffrey-r-maxwell'><strong><span>JEFFREY R. MAXWELL</span></strong></h1><div style="text-align: center; margin-bottom: 20px; color: #666; font-size: 14px;">
+<strong>Self-Taught Full-Stack Developer | Hispanic Studies Scholar</strong><br/>
+📧 maxjeffwell@gmail.com | 📱 508.395.2008<br/>
+🔗 <a href="https://el-jefe.me">el-jefe.me</a> | 🐙 <a href="https://github.com/maxjeffwell">github.com/maxjeffwell</a>
+</div><hr /><h2 id='professional-summary'><strong><span>PROFESSIONAL SUMMARY</span></strong></h2><div style="margin: 15px 0; line-height: 1.6;">
+Self-motivated full-stack developer with demonstrated ability to independently master modern web technologies through intensive self-directed learning and immersive bootcamp training. Successfully built and deployed <strong>6+ production-ready applications</strong> using React, Node.js, GraphQL, and cloud platforms. Combining analytical skills from summa cum laude Hispanic Studies education with technical expertise to create user-centered applications. Phi Beta Kappa scholar bringing exceptional research abilities, cross-cultural communication skills, and proven capacity for complex problem-solving.
+</div><hr /><h2 id='technical-proficiencies'><strong><span>TECHNICAL PROFICIENCIES</span></strong></h2><div style="margin: 15px 0;"><h3 id='core-technologies'><span>Core Technologies</span></h3><p><code>JavaScript ES6+</code><span> </span><code>React 16-18</code><span> </span><code>Node.js</code><span> </span><code>Express</code><span> </span><code>GraphQL</code><span> </span><code>MongoDB</code><span> </span><code>PostgreSQL</code><span> </span><code>Git/GitHub</code><span></span><br/><code>Redux/Redux Toolkit</code><span> </span><code>JWT Authentication</code><span> </span><code>RESTful APIs</code><span> </span><code>CRUD Architecture</code><span> </span><code>Passport.js</code><span> </span><code>BCrypt</code></p><h3 id='frontend-development'><span>Frontend Development</span></h3><p><code>React Hooks</code><span> </span><code>Context API</code><span> </span><code>React Router</code><span> </span><code>Styled Components</code><span> </span><code>Emotion</code><span> </span><code>Tailwind CSS</code><span></span><br/><code>Webpack</code><span> </span><code>Babel</code><span> </span><code>Gatsby</code><span> </span><code>Responsive Design</code><span> </span><code>CSS Grid/Flexbox</code><span> </span><code>Semantic UI</code></p><h3 id='backend--database'><span>Backend &amp; Database  </span></h3><p><code>Apollo Server/Client</code><span> </span><code>Mongoose</code><span> </span><code>Sequelize</code><span> </span><code>Firebase</code><span> </span><code>WebSockets</code><span> </span><code>Middleware</code><span></span><br/><code>Error Handling</code><span> </span><code>API Design</code><span> </span><code>Data Validation</code><span> </span><code>Schema Design</code><span> </span><code>Query Optimization</code></p><h3 id='devops--tools'><span>DevOps &amp; Tools</span></h3><p><code>Heroku</code><span> </span><code>Vercel</code><span> </span><code>Travis CI</code><span> </span><code>Mocha</code><span> </span><code>Chai</code><span> </span><code>Enzyme</code><span> </span><code>Test-Driven Development</code><span></span><br/><code>Continuous Integration</code><span> </span><code>Docker Basics</code><span> </span><code>Serverless Functions</code><span> </span><code>Chrome DevTools</code><span> </span><code>Postman</code></p><p></div></p><hr /><h2 id='portfolio-projects'><strong><span>PORTFOLIO PROJECTS</span></strong></h2><div style="margin: 20px 0;"><h3 id='🎓-educationelly---full-stack-educational-platform'><strong><span>🎓 EducationELLy</span></strong><span> - Full-Stack Educational Platform</span></h3><div style="margin-left: 20px; margin-bottom: 15px;"><p><a href='https://educationelly-client-71a1b1901aaa.herokuapp.com/'><strong><span>Live Demo</span></strong></a><span> | </span><a href='https://github.com/maxjeffwell/educationELLy'><strong><span>GitHub</span></strong></a><span> | </span><code>React</code><span> </span><code>Redux Toolkit</code><span> </span><code>Node.js</code><span> </span><code>MongoDB</code><span> </span><code>JWT</code></p><p><strong><span>Technical Achievement:</span></strong><span> Built comprehensive student management system demonstrating full-stack proficiency</span></p><p><span>• </span><strong><span>Frontend:</span></strong><span> Implemented complex state management with Redux Toolkit, including async thunks and normalized data</span><br/><span>• </span><strong><span>Backend:</span></strong><span> Designed RESTful API with 15+ endpoints, middleware authentication, and comprehensive error handling</span><br/><span>• </span><strong><span>Database:</span></strong><span> Structured MongoDB schemas with Mongoose, including data validation and relational references</span><br/><span>• </span><strong><span>Authentication:</span></strong><span> Secure JWT-based auth flow with Passport.js, refresh tokens, and protected routes</span><br/><span>• </span><strong><span>Testing:</span></strong><span> Integrated Mocha/Chai test suite with 85% code coverage  </span></p><p></div></p><h3 id='💬-code-talk---real-time-collaborative-platform'><strong><span>💬 Code Talk</span></strong><span> - Real-Time Collaborative Platform</span></h3><div style="margin-left: 20px; margin-bottom: 15px;"><p><a href='https://github.com/maxjeffwell/code-talk'><strong><span>GitHub</span></strong></a><span> | </span><code>GraphQL</code><span> </span><code>Apollo</code><span> </span><code>WebSockets</code><span> </span><code>PostgreSQL</code><span> </span><code>Redis</code></p><p><strong><span>Technical Achievement:</span></strong><span> Mastered GraphQL and real-time technologies through self-directed learning</span></p><p><span>• </span><strong><span>GraphQL:</span></strong><span> Designed complete schema with queries, mutations, and subscriptions for live collaboration</span><br/><span>• </span><strong><span>Real-time:</span></strong><span> Implemented WebSocket connections using Apollo subscriptions for instant messaging</span><br/><span>• </span><strong><span>Performance:</span></strong><span> Optimized database queries with DataLoader, eliminating N+1 query problems</span><br/><span>• </span><strong><span>Architecture:</span></strong><span> Microservices pattern with separated client/server, proper error boundaries</span><br/><span>• </span><strong><span>Database:</span></strong><span> PostgreSQL with Sequelize ORM, connection pooling, and transaction management  </span></p><p></div></p><h3 id='🔖-bookmarked---modern-react-application-with-serverless-backend'><strong><span>🔖 Bookmarked</span></strong><span> - Modern React Application with Serverless Backend</span></h3><div style="margin-left: 20px; margin-bottom: 15px;"><p><a href='https://bookmarks-react-hooks.vercel.app/'><strong><span>Live Demo</span></strong></a><span> | </span><a href='https://github.com/maxjeffwell/bookmarks-react-hooks'><strong><span>GitHub</span></strong></a><span> | </span><code>React 18</code><span> </span><code>Hooks</code><span> </span><code>PostgreSQL</code><span> </span><code>Serverless</code></p><p><strong><span>Technical Achievement:</span></strong><span> Demonstrated evolution from class components to modern React patterns</span></p><p><span>• </span><strong><span>Modern React:</span></strong><span> Complete refactor using Hooks (useState, useEffect, useContext, custom hooks)</span><br/><span>• </span><strong><span>Serverless:</span></strong><span> Implemented Vercel Functions for API routes with automatic scaling</span><br/><span>• </span><strong><span>Database:</span></strong><span> Neon PostgreSQL integration with prepared statements and connection pooling</span><br/><span>• </span><strong><span>Performance:</span></strong><span> Sub-second load times through code splitting, lazy loading, and optimized bundles</span><br/><span>• </span><strong><span>Progressive Enhancement:</span></strong><span> Offline support, PWA features, responsive design  </span></p><p></div></p><h3 id='🔥-firebook---first-full-stack-application'><strong><span>🔥 FireBook</span></strong><span> - First Full-Stack Application</span></h3><div style="margin-left: 20px; margin-bottom: 15px;"><p><a href='https://marmoset-c2870.firebaseapp.com'><strong><span>Live Demo</span></strong></a><span> | </span><a href='https://github.com/maxjeffwell/bookmarks-capstone-api'><strong><span>GitHub</span></strong></a><span> | </span><code>Vanilla JS</code><span> </span><code>Firebase</code><span> </span><code>Cloud Firestore</code></p><p><strong><span>Technical Achievement:</span></strong><span> Capstone project demonstrating progression from fundamentals to deployment</span></p><p><span>• </span><strong><span>Vanilla JavaScript:</span></strong><span> Built entire SPA without frameworks, demonstrating core JS mastery</span><br/><span>• </span><strong><span>Firebase Ecosystem:</span></strong><span> Integrated Authentication, Firestore, Cloud Functions, and Hosting</span><br/><span>• </span><strong><span>State Management:</span></strong><span> Implemented custom state management solution with pub/sub pattern</span><br/><span>• </span><strong><span>Responsive Design:</span></strong><span> Mobile-first approach with CSS Grid and Flexbox  </span></p><p></div></p><h3 id='🚀-developer-portfolio---performance-optimized-static-site'><strong><span>🚀 Developer Portfolio</span></strong><span> - Performance-Optimized Static Site</span></h3><div style="margin-left: 20px; margin-bottom: 15px;"><p><a href='https://el-jefe.me'><strong><span>Live Site</span></strong></a><span> | </span><a href='https://github.com/maxjeffwell/portfolio-gatsby'><strong><span>GitHub</span></strong></a><span> | </span><code>Gatsby</code><span> </span><code>GraphQL</code><span> </span><code>Framer Motion</code><span> </span><code>PWA</code></p><p><strong><span>Technical Achievement:</span></strong><span> Achieved perfect Lighthouse scores across all metrics</span></p><p><span>• </span><strong><span>Static Site Generation:</span></strong><span> Gatsby 5 with GraphQL data layer for build-time optimization</span><br/><span>• </span><strong><span>Performance:</span></strong><span> 100/100 Lighthouse score, sub-second load times, optimized images</span><br/><span>• </span><strong><span>Animations:</span></strong><span> Smooth transitions with Framer Motion and CSS animations</span><br/><span>• </span><strong><span>SEO &amp; Accessibility:</span></strong><span> Structured data, semantic HTML, ARIA labels, meta optimization  </span></p><p></div>
+</div></p><hr /><h2 id='education'><strong><span>EDUCATION</span></strong></h2><div style="margin: 15px 0;"><h3 id='thinkful-|-new-york-new-york-|-2019'><strong><span>Thinkful</span></strong><span> | New York, New York | </span><em><span>2019</span></em></h3><p><strong><span>Engineering Immersion Program - Full Stack Web Development</span></strong></p><p><span>• Intensive 6-month program with 1000+ hours of coding practice</span><br/><span>• Curriculum emphasis on modern JavaScript frameworks (React, Node.js, Express)</span><br/><span>• Workflow based on pair-programming principles and agile methodology</span><br/><span>• Advanced computer science topics including data structures and algorithms</span><br/><span>• 1-on-1 mentorship with industry professionals  </span></p><h3 id='trinity-college-|-hartford-connecticut-|-may-2017'><strong><span>Trinity College</span></strong><span> | Hartford, Connecticut | </span><em><span>May 2017</span></em></h3><p><strong><span>Bachelor of Arts, Hispanic Studies</span></strong><span> - </span><em><span>Summa Cum Laude, GPA: 3.91</span></em></p><p><span>• </span><strong><span>Honors Thesis:</span></strong><span> </span><em><span>¡Ya basta! Las enseñanzas místicas del subcomandante Marcos y la otra realidad</span></em><span></span><br/><span>  (The Mystical Teachings of Subcomandante Marcos and The Other Reality)</span><br/><span>• </span><strong><span>Phi Beta Kappa Society</span></strong><span> - Elected to oldest academic honor society in the United States</span><br/><span>• </span><strong><span>President&#39;s Fellow</span></strong><span> - Language and Culture Studies</span><br/><span>• </span><strong><span>Writing Center Associate</span></strong><span> - Selected as specialized bilingual writing advisor  </span></p><p></div></p><hr /><h2 id='self-directed-learning-journey'><strong><span>SELF-DIRECTED LEARNING JOURNEY</span></strong></h2><div style="margin: 15px 0;"><h3 id='continuous-technical-development-2019-present'><strong><span>Continuous Technical Development</span></strong><span> </span><em><span>(2019-Present)</span></em></h3><div style="margin-left: 20px;"><p><span>• </span><strong><span>Post-Bootcamp Growth:</span></strong><span> Expanded from MERN stack to GraphQL, TypeScript, serverless architectures</span><br/><span>• </span><strong><span>Open Source Contributions:</span></strong><span> Active contributor to educational technology projects</span><br/><span>• </span><strong><span>Technical Writing:</span></strong><span> Documented learning journey through technical blog posts and tutorials</span><br/><span>• </span><strong><span>Community Engagement:</span></strong><span> Regular participation in Stack Overflow, Reddit r/webdev, Discord communities  </span></p><p></div></p><h3 id='learning-metrics--achievements'><strong><span>Learning Metrics &amp; Achievements</span></strong></h3><div style="display: flex; justify-content: space-around; margin: 20px 0; text-align: center;">
+<div><strong>1000+</strong><br/>Bootcamp Hours</div>
+<div><strong>500+</strong><br/>Self-Study Hours</div>
+<div><strong>50,000+</strong><br/>Lines of Code</div>
+<div><strong>6</strong><br/>Deployed Apps</div>
+</div><p></div></p><hr /><h2 id='leadership--honors'><strong><span>LEADERSHIP &amp; HONORS</span></strong></h2><div style="margin: 15px 0;"><h3 id='academic-distinctions'><strong><span>Academic Distinctions</span></strong></h3><p><span>• </span><strong><span>Phi Beta Kappa Society</span></strong><span> </span><em><span>(2017)</span></em><span> - Recognition for academic excellence and intellectual engagement</span><br/><span>• </span><strong><span>Summa Cum Laude Graduate</span></strong><span> - Highest distinction, top 5% of graduating class</span><br/><span>• </span><strong><span>Dean&#39;s List</span></strong><span> - All eligible semesters  </span></p><h3 id='leadership-roles'><strong><span>Leadership Roles</span></strong></h3><p><span>• </span><strong><span>President&#39;s Fellow, Trinity College</span></strong><span> </span><em><span>(2016-2017)</span></em><span>  </span></p><ul><li><p><span>Met bi-weekly with college president to discuss campus initiatives  </span></p></li><li><p><span>Co-edited Trinity Papers, annual journal of outstanding undergraduate scholarship  </span></p></li><li><p><span>Selected from entire student body for leadership and academic achievement  </span></p></li></ul><p><span>• </span><strong><span>Writing Associate, The Writing Center</span></strong><span> </span><em><span>(2015-2017)</span></em><span>  </span></p><ul><li><p><span>Faculty-recommended position as specialized bilingual writing advisor  </span></p></li><li><p><span>Collaborated with students on academic writing in English and Spanish  </span></p></li><li><p><span>Developed workshops on cross-cultural communication and academic writing  </span></p></li></ul><p></div></p><hr /><h2 id='core-competencies'><strong><span>CORE COMPETENCIES</span></strong></h2><div style="margin: 15px 0;"><div style="display: flex; justify-content: space-between;">
+<div style="width: 48%;"><h3 id='technical-strengths'><strong><span>Technical Strengths</span></strong></h3><p><span>• Full-stack development capability</span><br/><span>• Test-driven development</span><br/><span>• Agile/Scrum methodology</span><br/><span>• Pair programming experience</span><br/><span>• Clean, maintainable code  </span></p><p></div></p><div style="width: 48%;"><h3 id='professional-skills'><strong><span>Professional Skills</span></strong></h3><p><span>• Exceptional research abilities</span><br/><span>• Cross-cultural communication</span><br/><span>• Technical documentation</span><br/><span>• Complex problem-solving</span><br/><span>• Self-directed learning  </span></p><p></div>
+</div></p><h3 id='languages'><strong><span>Languages</span></strong></h3><p><strong><span>English:</span></strong><span> Native | </span><strong><span>Spanish:</span></strong><span> Working fluency | </span><strong><span>JavaScript:</span></strong><span> See my elephant mascot at el-jefe.me/about </span></p><p></div></p><hr /><h2 id='what-i-bring-to-your-team'><strong><span>WHAT I BRING TO YOUR TEAM</span></strong></h2><div style="margin: 15px 0; background-color: #f8f9fa; padding: 15px; border-radius: 5px;"><p><span>✓ </span><strong><span>Academic Excellence</span></strong><span> - Proven track record of achievement and intellectual rigor</span><br/><span>✓ </span><strong><span>Technical Proficiency</span></strong><span> - Strong foundation in modern web development technologies</span><br/><span>✓ </span><strong><span>Research Skills</span></strong><span> - Ability to quickly learn and master new technologies independently</span><br/><span>✓ </span><strong><span>Communication</span></strong><span> - Exceptional written and verbal skills from humanities background</span><br/><span>✓ </span><strong><span>Cultural Competence</span></strong><span> - Bilingual abilities and cross-cultural understanding</span><br/><span>✓ </span><strong><span>Growth Mindset</span></strong><span> - Continuous learner passionate about technology and innovation  </span></p><p></div></p><hr /><div style="text-align: center; margin-top: 30px; font-style: italic; color: #666;">
+Available for immediate start • Eager to contribute to mission-driven teams
+</div></div></div>
+</body>
+</html>
