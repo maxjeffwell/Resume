@@ -11,9 +11,10 @@ layout: default
 ### Personal Projects Portfolio
 **Full-Stack Developer** • 2019 — Present
 
-Built and deployed 6+ production-ready applications demonstrating mastery of modern web technologies including React, Node.js, GraphQL, and cloud platforms.
+Built and deployed 7+ production-ready applications demonstrating mastery of modern web technologies including React, Node.js, GraphQL, and cloud platforms.
 
 - **educationELLy** - Comprehensive student management system with JWT authentication
+- **educationELLy GraphQL** - Enhanced version with GraphQL API and PostgreSQL database
 - **Code Talk** - Real-time collaborative platform using GraphQL and WebSockets  
 - **Bookmarked** - Modern React application with serverless backend
 - **FireBook** - Full-stack application using Firebase ecosystem
