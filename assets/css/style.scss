@@ -57,6 +57,39 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Header - Classic Jekyll Architect theme styling */
+header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #2e7bcf;
+    border-bottom: solid 1px #275da1;
+}
+
+header h1 {
+    color: white !important;
+    margin: 0 0 20px 0;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+}
+
+header h2 {
+    color: #cee4f0 !important;
+    margin: 0;
+    font-size: 20px !important;
+    font-weight: normal !important;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
 /* Layout */
 .inner {
     max-width: 1000px;
