@@ -82,7 +82,7 @@ Node.js, Express, GraphQL, Apollo Server/Client, RESTful APIs, JWT Authenticatio
 MongoDB, PostgreSQL, Mongoose, Sequelize, Firebase, Cloud Firestore, Schema Design, Query Optimization, Data Validation, Connection Pooling
 
 ### DevOps & Tools
-Git/GitHub, Heroku, Vercel, Travis CI, Docker Basics, Serverless Functions, Chrome DevTools, Postman, Test-Driven Development, Mocha, Chai, Enzyme
+Git/GitHub, Heroku, Vercel, Render, Travis CI, Docker Basics, Serverless Functions, Chrome DevTools, Postman, Test-Driven Development, Mocha, Chai, Enzyme
 
 ### Languages & Communication
 English (Native), Spanish (Working fluency), Technical documentation, Cross-cultural communication, Academic writing, Research abilities
