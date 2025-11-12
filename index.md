@@ -17,6 +17,7 @@ Built and deployed 7+ production-ready applications demonstrating mastery of mod
 - **educationELLy GraphQL** - Enhanced version with GraphQL API and PostgreSQL database
 - **Code Talk** - Real-time collaborative platform using GraphQL and WebSockets  
 - **Bookmarked** - Modern React application with serverless backend
+- **IntervalAI** - Neural-enhanced spaced repetition system with ML-powered scheduling
 - **FireBook** - Full-stack application using Firebase ecosystem
 - **Developer Portfolio** - Performance-optimized static site with perfect Lighthouse scores
 
@@ -43,6 +44,14 @@ Real-time collaborative platform using GraphQL, Apollo, WebSockets, PostgreSQL, 
 **Frontend Developer** • 2019 - Present
 
 Modern React application with serverless backend. Complete refactor using React Hooks (useState, useEffect, useContext, custom hooks). Implemented Vercel Functions for API routes with Neon PostgreSQL integration and sub-second load times.
+
+### [IntervalAI](https://spaced-repetition-capstone-client.onrender.com/)
+**Full-Stack Developer** • 2025
+
+Neural-enhanced spaced repetition learning system that uses machine learning to optimize
+vocabulary review timing. Built with React, Redux, Node.js, MongoDB, and TensorFlow.js.
+Features 10-layer deep neural network with 51 engineered features achieving 96.1% improvement over
+baseline SM-2 algorithm with WebGPU-accelerated inference.
 
 ### [educationELLy (GraphQL Version)](https://educationelly-client-graphql-176ac5044d94.herokuapp.com/)
 **Full-Stack Developer** • 2021 - Present
