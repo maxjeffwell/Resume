@@ -45,9 +45,9 @@ Comprehensive student management system demonstrating full-stack proficiency. Bu
 Real-time collaborative platform using GraphQL, Apollo, WebSockets, PostgreSQL, and Redis. Implemented complete GraphQL schema with queries, mutations, and subscriptions. Optimized database queries with DataLoader to eliminate N+1 problems.
 
 ### [Bookmarked](https://bookmarks-react-hooks.vercel.app/)
-**Frontend Developer** • 2019 - Present
+**Full-Stack Developer** • 2019 - Present
 
-Modern React application with serverless backend. Complete refactor using React Hooks (useState, useEffect, useContext, custom hooks). Implemented Vercel Functions for API routes with Neon PostgreSQL integration and sub-second load times.
+AI-powered bookmark manager with intelligent categorization using OpenAI GPT-4o-mini and LangChain. Built with React 18.3, Emotion CSS-in-JS, and Vercel Serverless Functions. Features automatic AI tagging with smart caching to minimize API costs, full-text PostgreSQL search using Neon Serverless Database, browser import support (Chrome, Firefox, Safari, Edge), 5-star rating system, and favorites management. Implements technology detection and content classification through cached AI responses.
 
 ### [IntervalAI](https://spaced-repetition-capstone-client.onrender.com/)
 **Full-Stack Developer** • 2025
@@ -65,7 +65,7 @@ Refactored EducationELLy using GraphQL, Apollo, and PostgreSQL. Implemented comp
 ### [FireBook](https://marmoset-c2870.firebaseapp.com)
 **Full-Stack Developer** • 2018 - Present
 
-First full-stack application built with vanilla JavaScript and Firebase ecosystem. Demonstrated core JS mastery without frameworks. Integrated Firebase Authentication, Firestore, Cloud Functions, and Hosting with custom state management solution.
+AI-enhanced bookmark manager with automated metadata extraction and intelligent tagging. Modernized with React 19, Vite, and Tailwind CSS v3. Integrates Algolia instant search with fuzzy matching, Google Cloud Natural Language API for AI tag generation, and Puppeteer-based Cloud Functions v2 for automatic webpage preview capture. Features Firebase Authentication (email/password + Google OAuth), Firestore database, collaborative collections with granular permissions (viewer/editor roles), and Firebase Storage. Deployed with Docker multi-stage builds, nginx serving, and GitHub Actions CI/CD automation.
 
 ### [Developer Portfolio](https://el-jefe.me)
 **Frontend Developer** • 2019 - Present
@@ -97,13 +97,13 @@ Enterprise-grade microservices platform decomposing four monolithic applications
 ## Skills
 
 ### Frontend Development
-React 16-18, JavaScript ES6+, HTML5/CSS3, Redux/Redux Toolkit, React Hooks, Context API, React Router, Styled Components, Tailwind CSS, Material-UI, Webpack, Babel, Vite, Gatsby, Responsive Design
+React 16-19, JavaScript ES6+, HTML5/CSS3, Redux/Redux Toolkit, React Hooks, Context API, React Router, Styled Components, Emotion, Tailwind CSS, Material-UI, Webpack, Babel, Vite, Gatsby, Responsive Design
 
 ### Backend Development
-Node.js, Express, Python, FastAPI, GraphQL, Apollo Server/Client, RESTful APIs, JWT Authentication, Passport.js, Middleware, Error Handling, API Design, Data Validation, WebSockets, Socket.io
+Node.js, Express, Python, FastAPI, GraphQL, Apollo Server/Client, RESTful APIs, JWT Authentication, Passport.js, OAuth, Middleware, Error Handling, API Design, Data Validation, WebSockets, Socket.io, Puppeteer, Firebase Cloud Functions
 
 ### Database & Storage
-MongoDB, PostgreSQL, Redis, InfluxDB, Elasticsearch, Mongoose, Sequelize, Firebase, Cloud Firestore, Schema Design, Query Optimization, Data Validation, Connection Pooling
+MongoDB, PostgreSQL, Neon Serverless PostgreSQL, Redis, InfluxDB, Elasticsearch, Algolia, Mongoose, Sequelize, Firebase, Cloud Firestore, Schema Design, Query Optimization, Full-Text Search, Data Validation, Connection Pooling
 
 ### Container Orchestration & Infrastructure
 Kubernetes, Docker, Helm, Istio Service Mesh, MicroK8s, K3s, Namespace Isolation, Resource Quotas, Network Policies, Service Discovery, Load Balancing, Horizontal Pod Autoscaling
@@ -117,8 +117,11 @@ Prometheus, Grafana, Jaeger, Loki, ELK Stack, Distributed Tracing, Centralized L
 ### Message Queues & API Gateway
 RabbitMQ, Kafka, Kong, Ambassador, Event Streaming, Asynchronous Communication, API Gateway Patterns
 
+### AI & Machine Learning Integration
+OpenAI API, GPT-4o-mini, LangChain, Google Cloud Natural Language API, AI Prompt Engineering, Smart Caching Strategies, Content Classification, Technology Detection
+
 ### Development Tools
-Chrome DevTools, Postman, Test-Driven Development, Mocha, Chai, Enzyme, Serverless Functions
+Chrome DevTools, Postman, Test-Driven Development, Mocha, Chai, Enzyme, Serverless Functions, nginx
 
 ### Languages & Communication
 English (Native), Spanish (Working fluency), Technical documentation, Cross-cultural communication, Academic writing, Research abilities
