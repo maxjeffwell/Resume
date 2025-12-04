@@ -161,7 +161,7 @@ Highest distinction awarded to the top 5% of graduating class with GPA of 3.91.
 Selected from the entire student body for leadership and academic achievement. Met bi-weekly with college president to discuss campus initiatives and co-edited Trinity Papers, annual journal of outstanding undergraduate scholarship.
 
 ### Writing Center Associate • Trinity College • 2015-2017
-Faculty-recommended position as specialized bilingual writing advisor. Collaborated with students on academic writing in English and Spanish and developed workshops on cross-cultural communication.
+Faculty-recommended position as a specialized bilingual writing advisor. Collaborated with students on academic writing in English and Spanish and developed workshops on cross-cultural communication.
 
 ---
 
