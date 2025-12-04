@@ -1,6 +1,9 @@
 ---
 layout: default
+
 ---
+
+## Jeffrey R. Maxwell
 
 ### Contact: jeff@el-jefe.me • 508.395.2008 • Florida, USA
 
@@ -90,7 +93,7 @@ Production-ready multi-tenant Kubernetes platform deploying isolated educationEL
 ### [Vertex Platform](https://github.com/maxjeffwell/microservices-platform)
 **Platform Architect** • 2024 - Present
 
-Enterprise-grade microservices platform decomposing four monolithic applications into unified distributed system. Orchestrates 29 microservices using Kubernetes with Istio service mesh for mTLS encryption and traffic management. Technology stack includes Node.js, Python/FastAPI, Apollo GraphQL, PostgreSQL, MongoDB, Redis, InfluxDB, and Elasticsearch. Features Kong/Ambassador API Gateway, RabbitMQ and Kafka for message queues, single sign-on across applications, and comprehensive distributed tracing with Jaeger.
+Enterprise-grade microservices platform decomposing four monolithic applications into a unified distributed system. Orchestrates 29 microservices using Kubernetes with Istio service mesh for mTLS encryption and traffic management. Technology stack includes Node.js, Python/FastAPI, Apollo GraphQL, PostgreSQL, MongoDB, Redis, InfluxDB, and Elasticsearch. Features Kong/Ambassador API Gateway, RabbitMQ and Kafka for message queues, single sign-on across applications, and comprehensive distributed tracing with Jaeger.
 
 ---
 
@@ -152,10 +155,10 @@ Honors Thesis on "The Mystical Teachings of Subcomandante Marcos and The Other R
 Elected to the oldest academic honor society in the United States for academic excellence and intellectual engagement.
 
 ### Summa Cum Laude Graduate • Trinity College • 2017
-Highest distinction awarded to top 5% of graduating class with GPA of 3.91.
+Highest distinction awarded to the top 5% of graduating class with GPA of 3.91.
 
 ### President's Fellow • Trinity College • 2016-2017
-Selected from entire student body for leadership and academic achievement. Met bi-weekly with college president to discuss campus initiatives and co-edited Trinity Papers, annual journal of outstanding undergraduate scholarship.
+Selected from the entire student body for leadership and academic achievement. Met bi-weekly with college president to discuss campus initiatives and co-edited Trinity Papers, annual journal of outstanding undergraduate scholarship.
 
 ### Writing Center Associate • Trinity College • 2015-2017
 Faculty-recommended position as specialized bilingual writing advisor. Collaborated with students on academic writing in English and Spanish and developed workshops on cross-cultural communication.
